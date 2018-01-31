@@ -42,7 +42,7 @@ class ContentSpider(Spider):
 
         return len(
             newre.findall(
-                ur'({})(\.|\,|\:|\;|)'.format(
+                r'({})(\.|\,|\:|\;|)'.format(
                     '|'.join(triggerwords)
                 ),
                 text,

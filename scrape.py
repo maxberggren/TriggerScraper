@@ -59,6 +59,8 @@ while True:
 
     been_at_already.append(url)
 
+    # A finding is only saved if it's been properly visited
+    # i.e. more than X links have been processed.
     current_findings = (
         df
         .query('n_links >= 10')
