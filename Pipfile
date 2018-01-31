@@ -1,0 +1,32 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[requires]
+
+python_full_version = "2.7.14"
+
+
+[dev-packages]
+
+
+
+[packages]
+
+"beautifulsoup4" = "==4.6.0"
+"bs4" = "==0.0.1"
+coloredlogs = "==9.0"
+grab = "*"
+lxml = "==4.1.1"
+numpy = "==1.14.0"
+pandas = "==0.20.3"
+pew = "==1.1.2"
+qr = "==0.6.0"
+redis = "==2.10.5"
+requests = "==2.18.4"
+"urllib3" = "==1.22"
+user-agent = "==0.1.9"
+pycurl = "*"
