@@ -59,15 +59,17 @@ while True:
 
     been_at_already.append(url)
 
-    log.info('Current top candidates for trigger sites')
-    log.info(
-        'Current findings: \n\n%s\n' %
+    current_findings = (
         df
         .query('n_links >= 10')
         .head(30)
         [['domain', 'ratio', 'triggered', 'n_links']]
-        
     )
+
+    log.info('Current top candidates for trigger sites: \n\n%s\n' % current_findings)
+
+    # Keep current findings at file
+    current_findings.to_csv('current_findings.csv')
 
     # Sample next url to visit from trigger sites
     url = extract_site(
