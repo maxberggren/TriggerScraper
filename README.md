@@ -5,4 +5,12 @@
 ## Install ##
 
   1. `$ pip install pipenv`
-  2. `pipenv install`
+  2. `$ pipenv install`
+
+## Run ##
+
+  1. `$ pipenv run python scrape.py`
+
+## Optional ##
+
+  * Modify `common.py` with our triggerwords. By default it's some Swedish words strongly correlated with the alt-right strongly focused on immigration.
