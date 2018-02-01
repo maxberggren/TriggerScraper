@@ -24,6 +24,7 @@
 
 After some time, the scraper will have saved something like this to `current_findings.csv`:
 
+```
     |  domain                                  |  ratio               |  triggered  |  n_links
 ----|------------------------------------------|----------------------|-------------|---------
 6   |  http://avpixlat.info                    |  7.774193548387097   |  210        |  31
@@ -50,3 +51,4 @@ After some time, the scraper will have saved something like this to `current_fin
 47  |  http://www.magnussandelin.se            |  1.0714285714285714  |  3          |  42
 35  |  http://tullberg.org                     |  1.0535714285714286  |  3          |  56
 11  |  http://gudmundson.blogspot.se           |  1.0454545454545454  |  3          |  66
+```
