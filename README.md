@@ -2,21 +2,18 @@
 
 `TriggerScraper` is a scraper to map out clusters of sites containing some trigger words. Built on top of `grab`.
 
-## Requirements ## 
-
-  1. `$ pip install pipenv`
-  2. `$ brew install redis`
-
 ## Install ##
 
-  1. `$ pipenv install`
+  1. `$ pip install pipenv` (if needed)
+  2. `$ brew install redis` (if needed)
+  3. `$ pipenv install`
 
 ## Run ##
 
   1. Run Redis locally: `$ redis-server` in a terminal window
   2. `$ pipenv run python scrape.py`
 
-## Optional ##
+## Settings ##
 
   * Modify `common.py` with our triggerwords. By default it's some Swedish words strongly correlated with the alt-right strongly focused on immigration.
 
