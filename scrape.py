@@ -71,7 +71,10 @@ while True:
     log.info('Current top candidates for trigger sites: \n\n%s\n' % current_findings)
 
     # Keep current findings at file
-    current_findings.to_csv('current_findings.csv')
+    current_findings.to_csv(
+        'current_findings.csv', 
+        encoding='utf-8'
+    )
 
     # Sample next url to visit from trigger sites
     url = extract_site(
